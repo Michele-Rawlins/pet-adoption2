@@ -1,0 +1,28 @@
+body {
+    background-color: beige                    
+}
+
+    .pets {
+    background-image: linear-gradient(pink,grey);
+    border: solid 2px black;
+    display: flex;
+    justify-content: space-around;
+    width: 250px;
+    height: 300px;
+    flex-direction: row;
+    flex-flow: wrap;
+    text-align: center;
+    align-items: center;
+
+}
+
+h3 {
+    text-align: justify;
+    text-align: center;
+    padding: 5px
+
+}
+
+button {
+    text-align: center;
+}
