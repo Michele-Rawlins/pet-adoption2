@@ -70,30 +70,61 @@ const pets = [
 ];
 
 
-console.log(pets);
+// console.log(pets);
 
 const printToDom = (divId,textToPrint) => {
   const selectedDiv = document.getElementById(divId);
- selectedDiv.innerHTML = textToPrint;
- }
-
-const petCards = () => {
-
-let domString='';
-for(let i = 0; i <pets.length; i++){
-  domString += `<div class ="card">`;
-   domString += `<div class="adoption">`;
-   domString += `<h1>${pets[i].name}</h1>`;
-   domString += `<img class="img" src="${pets[i].imageUrl}">`;
-   domString += `<h3><br>${pets[i].color}</h3>`;
-   domString += `<h3>${pets[i].specialSkill}</h3>`;
-   domString += `<button class = "button">${pets[i].type}</button>`;
-   domString +=`</div>`;
-   domString += `</div>`;
+  selectedDiv.innerHTML = textToPrint;
 }
 
-printToDom('mypets',domString );
- 
+const displayCard = (event) => {
+  let domString = "";
+
+  for(let i = 0; i <pets.length; i++){
+    if (pets[i].type === event.target.id) {
+      
+      domString += `<div class ="card">`;
+      domString += `<div class="adoption">`;
+      domString += `<h1>${pets[i].name}</h1>`;
+      domString += `<img class="img" src="${pets[i].imageUrl}">`;
+      domString += `<h3><br>${pets[i].color}</h3>`;
+      domString += `<h3>${pets[i].specialSkill}</h3>`;
+      domString += `<button class = "button">${pets[i].type}</button>`;
+      domString +=`</div>`;
+      domString += `</div>`;
+    }
+  }
+  printToDom('mypets',domString );  
 };
+
+
+
+
+const petCards = () => {
+  
+  
+  
+  let domString='';
+  
+  for(let i = 0; i <pets.length; i++){
+    domString += `<div class ="card">`;
+    domString += `<div class="adoption">`;
+    domString += `<h1>${pets[i].name}</h1>`;
+    domString += `<img class="img" src="${pets[i].imageUrl}">`;
+    domString += `<h3><br>${pets[i].color}</h3>`;
+    domString += `<h3>${pets[i].specialSkill}</h3>`;
+    domString += `<button class = "button">${pets[i].type}</button>`;
+    domString +=`</div>`;
+    domString += `</div>`;
+  }
+  
+  printToDom('mypets',domString );
+  
+};
+
+document.getElementById("Cat").addEventListener("click", displayCard);
+document.getElementById("Dog").addEventListener("click", displayCard);
+document.getElementById("Dino").addEventListener("click", displayCard);
+document.getElementById("All").addEventListener("click", petCards);
 
 petCards();
