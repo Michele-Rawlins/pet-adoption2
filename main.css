@@ -1,6 +1,13 @@
 body {
     background-color: beige;                    
 }
+
+.title {
+font-size: 25px;
+text-align: center;
+padding: 30px;
+
+}
 .pets {
     display: flex;
     flex-wrap: wrap;
@@ -9,7 +16,6 @@ body {
 }
 
 .adoption {
-    /* background-color: blanchedalmond; */
     background-image: linear-gradient(pink,grey);
     border: solid 5px black;
     width: 250px;;
@@ -27,9 +33,18 @@ h3 {
     padding: 5px 5px;
 }
 
-button {
+.buttons {
     text-align: center;
+    background-color: rgb(237, 215, 248);
+    margin: auto;
+    border-radius: 50%;
+
 }
+
+
+
+
+
 .img {
     border: 4px solid black;
     width: 150px;
@@ -37,7 +52,8 @@ button {
 
 
 }
-.button {
 
-    
+footer {
+    text-align: center;
+    padding: 10px;
 }
