@@ -1,9 +1,12 @@
 body {
-    background-color: beige;                    
+    background-color: #e6cfe3;
+background-image: url("https://www.transparenttextures.com/patterns/binding-dark.png");
+
+   
 }
 
 .title {
-font-size: 25px;
+font-size: 50px;
 text-align: center;
 padding: 30px;
 
@@ -35,25 +38,33 @@ h3 {
 
 .buttons {
     text-align: center;
-    background-color: rgb(237, 215, 248);
     margin: auto;
     border-radius: 50%;
 
 }
-
-
-
-
+.style {
+    border-radius: rgb(238, 191, 238) 50%;
+}
 
 .img {
-    border: 4px solid black;
+    border: 4px double black;
     width: 150px;
     height: 150px;
-
+    box-shadow: 3px 3px black;
 
 }
 
 footer {
     text-align: center;
     padding: 10px;
+}
+#Cat {
+    background-color: rgb(183, 154, 184);
+}
+
+#Dog {
+    background-color: rgb(231, 195, 231);
+}
+#Dino {
+background-color: darkgrey;
 }
