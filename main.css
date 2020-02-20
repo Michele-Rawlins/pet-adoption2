@@ -40,11 +40,10 @@ h3 {
     text-align: center;
     margin: auto;
     border-radius: 50%;
+    box-shadow: 2px 2px black;
 
 }
-.style {
-    border-radius: rgb(238, 191, 238) 50%;
-}
+
 
 .img {
     border: 4px double black;
