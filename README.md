@@ -4,7 +4,7 @@
 This project we used flex box and played with css styling.   Users are able to filter thru pets with the buttons on top of the page.  
 
 ## Screen shots
-![Main Screen](./screenshots/petadopt.PNG)
+![Main Screen](./screenshots/petadopt.png)
 
 
 ## Instructions how to run
